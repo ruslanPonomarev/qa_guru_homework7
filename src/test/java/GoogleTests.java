@@ -17,5 +17,7 @@ public class GoogleTests {
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(Condition.text("selenide.org"));
+        //Let's define a more precise scope for the assertion:
+        $("#rcnt").shouldHave(Condition.text("selenide.org"));
     }
 }
