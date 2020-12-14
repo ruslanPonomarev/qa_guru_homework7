@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class GoogleTests {
 
     @Test
+    @Display("Сделать поисковый запрос в Хроме") 
     void selenideSearchTest() {
         // Открыть google
         open("https://google.com");
